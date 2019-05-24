@@ -1,0 +1,11 @@
+version: '2'
+services:
+    test789svc-postgresql:
+        image: postgres:10.4
+        # volumes:
+        #     - ~/volumes/jhipster/test789svc/postgresql/:/var/lib/postgresql/data/
+        environment:
+            - POSTGRES_USER=test789svc
+            - POSTGRES_PASSWORD=
+        ports:
+            - 5432:5432
